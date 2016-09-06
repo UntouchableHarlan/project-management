@@ -5,7 +5,6 @@ class User < ApplicationRecord
   validates :email, presence: true, uniqueness: true
   validates :password, presence: true
 
-  def to_param
-    username
-  end
+  extend FriendlyId
+  friendly_id :username, use: :slugged
 end
