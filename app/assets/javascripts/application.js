@@ -14,3 +14,21 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+var submitSignup = function(){
+  $('#new_user').submit(function(event){
+    event.preventDefault
+    $.ajax({
+      url: this.attr('action'),
+      type: this.attr('method'),
+      data: $(this).serialize(),
+      success: function(){
+        console.log('signed up');
+      }// end success
+    });// end ajax
+  }); // edn submit
+}; //end function
+
+$(document).ready(function(){
+
+});

@@ -9,5 +9,9 @@ class ApplicationController < ActionController::Base
     redirect_to login_path unless current_user
   end
 
+  def already_logged_in?
+    redirect_to current_user if current_user
+  end
+
   helper_method :current_user
 end
