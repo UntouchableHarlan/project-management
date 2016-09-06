@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+/*Bootstrap buttons*/
+.btn {
+  border: 2px solid #0099cc;
+	color: #0099cc;
+}
+/*------------------------------------------------------------------------------------*/
+body {
+  height: 100%;
+  font-family: 'Baloo Tamma';
+  /*font-family: 'Prompt', sans-serif;
+  font-family: 'Anton', sans-serif;
+  font-family: 'Candal', sans-serif;
+  font-family: 'Amaranth', sans-serif;*/
+}
+ .navbar {
+   margin: 0;
+   font-family: 'Amaranth';
+ }
